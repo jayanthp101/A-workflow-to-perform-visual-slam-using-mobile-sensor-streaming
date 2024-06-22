@@ -1,25 +1,107 @@
-# A-workflow-to-perform-visual-slam-using-mobile-sensor-streaming
- A MATLAB Simulink project for visual SLAM using mobile sensors
- 
-**Introduction:**
+Here's a comprehensive and professional README for your GitHub repository, including the "How to Use" section from the "git page.docx":
 
-This project demonstrates a Visual SLAM (Simultaneous Localization and Mapping) using mobile phone sensors. Leveraging MATLAB and Simulink, the project integrates various tools and toolboxes to collect and process sensor data from mobile devices, enabling the development and testing of SLAM and navigation algorithms.
+---
 
-**Motivation:**
+# Robust Visual SLAM Using Mobile Sensor Streaming
 
-Mobile phones, with their integrated sensors like IMU, magnetic compass, GPS, and camera, provide a readily accessible platform for Visual SLAM applications. This project aims to simplify the process of acquiring synchronized multi-sensor data, which can be used by researchers to develop and validate SLAM and navigation algorithms without the need for additional complex hardware setups. The resulting point cloud from SLAM can also be utilized for augmented reality applications.
+This repository contains the implementation of the project "Robust Visual SLAM Using Mobile Sensor Streaming".
 
-**Project Description:**
+## Table of Contents
+- [Introduction](#introduction)
+- [Abstract](#abstract)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Methodology](#methodology)
+- [Results](#results)
+- [Conclusion and Future Scope](#conclusion-and-future-scope)
+- [Acknowledgements](#acknowledgements)
+- [License](#license)
 
-The project is structured to guide users through the following key components:
+## Introduction
+In recent years, the field of robotics and autonomous systems has witnessed significant advancements, with Simultaneous Localization and Mapping (SLAM) emerging as a critical technology. This project leverages the advanced capabilities of modern smartphones to develop an efficient and reliable visual SLAM system. The project aims to democratize access to advanced mapping and localization technologies by utilizing the built-in sensors of mobile phones, thus eliminating the need for specialized and costly hardware.
 
-Data Collection:
-Utilizes Simulink with hardware support for Android to develop an app that collects accelerometer, gyroscope, and camera data.
-The collected data is stored in a .mat file format for easy access and processing in MATLAB.
+## Abstract
+The project successfully acquired and transferred image and sensor data from a mobile phone to a laptop for SLAM processing. The project aimed to create a comprehensive workflow for visual SLAM (VSLAM) in the MATLAB environment, enabling real-time navigation and mapping using visual sensor data from cameras. Despite the challenges of integrating IMU data and performing real-time processing, the project achieved data acquisition and dataset creation for visual SLAM algorithms. The implementation was based on the ORB SLAM framework, covering stages like Map Initialization, Tracking, Local Mapping, and Loop Closure.
 
-Calibration:
-Includes a script for calibrating the mobile device camera to ensure accurate visual data.
+## Features
+- Acquisition of image and sensor data from a mobile phone.
+- Transfer of data to a laptop for SLAM processing.
+- Implementation of the ORB SLAM framework.
+- Stages include Map Initialization, Tracking, Local Mapping, and Loop Closure.
+- Comprehensive workflow for visual SLAM in MATLAB.
 
-SLAM Algorithm:
-Provides scripts to integrate the collected sensor data and implement Visual SLAM, generating a point cloud of the environment.
-Researchers can use this project to collect and prepare datasets from mobile sensors to test their SLAM algorithms, facilitating advancements in navigation and mapping technologies.
+## Installation
+To set up the project, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/robust-visual-slam.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd robust-visual-slam
+   ```
+3. Install the required software and packages:
+   - MATLAB
+   - Simulink Support Package for Android Devices
+
+## Usage
+### Tools Required:
+- MATLAB
+- Simulink
+- [Computer Vision Toolbox](https://www.mathworks.com/products/computer-vision.html)
+- [Navigation Toolbox](https://in.mathworks.com/products/navigation.html)
+- [Sensor Fusion and Tracking Toolbox](https://in.mathworks.com/products/sensor-fusion-and-tracking.html)
+- [Simulink Support Package for Android Devices](https://in.mathworks.com/hardware-support/android-programming-simulink.html)
+
+### Steps to Use:
+1. **Download Required Tools:**
+   - Ensure all the listed tools are downloaded and installed.
+
+2. **Download and Extract Zip File:**
+   - Download the provided zip file and extract its contents.
+
+3. **Open Folder in MATLAB:**
+   - Navigate to the extracted folder and open it in MATLAB.
+
+4. **Develop Android Application:**
+   - Open the file named `Logging_from_phone.slx`. This will open a Simulink model.
+   - Ensure your Android device setup is complete for the Simulink Support Package for Android Devices.
+
+5. **Connect Phone and Build Application:**
+   - Connect your phone to your computer via a USB cable.
+   - In Simulink, click on `Hardware` and then `Monitor and Tune`. This action will build the application on your mobile phone.
+   - Once built, you can start collecting data from the phone. The collected data is logged in your MATLAB workspace.
+
+6. **Using Collected Data:**
+   - Data can be used directly from the workspace or converted into a dataset folder using the `complete_workspace_to_folder.m` script.
+
+7. **Perform Camera Calibration:**
+   - Camera calibration is required before performing SLAM.
+   - Use the Camera Calibration app in MATLAB or the `camera_calibration.m` script for this purpose.
+
+8. **Test SLAM Algorithm:**
+   - You can test the SLAM algorithm using the collected data.
+   - Two scripts are provided for this purpose:
+     - `vFunctionSlam.m`: Uses the inbuilt function `monoslam()` to perform visual SLAM. More information can be found [here](https://in.mathworks.com/help/vision/ref/monovslam.html).
+     - `vslam_owndata.m`: A modular code for visual SLAM. You can modify this script according to your dataset.
+
+## Methodology
+### Software
+- MATLAB
+- Simulink Support Package for Android Devices
+
+### Hardware
+- Mobile device with a camera, accelerometer, and gyroscope
+
+### Workflow
+1. **Camera Calibration**: Calibrate the camera to ensure accurate data acquisition.
+2. **Data Acquisition**: Capture and transmit sensor data from the mobile device to MATLAB.
+3. **Data Processing**: Use the ORB SLAM framework to process the data and perform SLAM operations.
+
+## Results
+The project demonstrated successful data acquisition and SLAM processing using mobile sensors. Key results include accurate map initialization, tracking, local mapping, and loop closure, proving the feasibility of using mobile phones for robust visual SLAM.
+
+## Conclusion and Future Scope
+The project successfully established a comprehensive workflow for visual SLAM using mobile sensors, eliminating the need for expensive setups. Future work could focus on integrating IMU data for real-time processing and improving the robustness of the SLAM system for various applications in mobile robotics, augmented reality, and autonomous systems.
