@@ -3,7 +3,7 @@
  
 **Introduction:**
 
-This project demonstrates a robust Visual SLAM (Simultaneous Localization and Mapping) solution using mobile phone sensors. Leveraging MATLAB and Simulink, the project integrates various tools and toolboxes to collect and process sensor data from mobile devices, enabling the development and testing of SLAM and navigation algorithms.
+This project demonstrates a Visual SLAM (Simultaneous Localization and Mapping) using mobile phone sensors. Leveraging MATLAB and Simulink, the project integrates various tools and toolboxes to collect and process sensor data from mobile devices, enabling the development and testing of SLAM and navigation algorithms.
 
 **Motivation:**
 
