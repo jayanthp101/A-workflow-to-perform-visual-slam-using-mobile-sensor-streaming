@@ -1,7 +1,5 @@
 
-# Robust Visual SLAM Using Mobile Sensor Streaming
-
-This repository contains the implementation of the project "Robust Visual SLAM Using Mobile Sensor Streaming".
+# A-workflow-to-perform-visual-slam-using-mobile-sensor-streaming
 
 ## Table of Contents
 - [Introduction](#introduction)
