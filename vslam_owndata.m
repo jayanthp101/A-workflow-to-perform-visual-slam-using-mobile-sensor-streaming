@@ -39,18 +39,9 @@
 % % Close the connection to the mobile device
 % clear m;
 
-
+%copy and paste the path of the folder with images here 
 %folderPath = "B:\finalReview\mobile_img_dataset\frames2";
-% 
-% folderPath = "B:\finalReview\tum_rgbd_dataset\rgbd_dataset_freiburg2_pioneer_360\rgb"; 
-% 
-% folderPath = "B:\finalReview\tum_rgbd_dataset\rgbd_dataset_freiburg1_xyz\rgb" ;
 
-%folderPath= "B:\finalReview\tum_rgbd_dataset\rgbd_dataset_freiburg3_long_office_household\rgb";
-
-%folderPath= "B:\finalReview\mobile_img_dataset\machien_wide";
-
-folderPath= "B:\finalReview\newPhoneData\images";
 
 
 
@@ -65,19 +56,11 @@ himage = imshow(currI);
 rng(0);
 
 
-
+%after camera calibration chage the below to your parameters
 %dataset
 % focalLength    = [535.4, 539.2];    % in units of pixels
 % principalPoint = [320.1, 247.6];    % in units of pixels
 
-
-%samsung
-focalLength    = [ 1230, 1188.2866];    % in units of pixels
-principalPoint = [ 674.0020,  427.4284];    % in units of pixels
-
-%oneplus
-% focalLength    = [445.8396, 446.3485];    % in units of pixels
-% principalPoint = [241.0271, 318.7461];    % in units of pixels
 
 
 imageSize      = size(currI,[1 2]);  % in units of pixels
