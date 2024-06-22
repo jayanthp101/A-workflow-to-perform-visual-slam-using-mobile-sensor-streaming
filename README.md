@@ -1,6 +1,3 @@
-Here's a comprehensive and professional README for your GitHub repository, including the "How to Use" section from the "git page.docx":
-
----
 
 # Robust Visual SLAM Using Mobile Sensor Streaming
 
@@ -105,3 +102,6 @@ The project demonstrated successful data acquisition and SLAM processing using m
 
 ## Conclusion and Future Scope
 The project successfully established a comprehensive workflow for visual SLAM using mobile sensors, eliminating the need for expensive setups. Future work could focus on integrating IMU data for real-time processing and improving the robustness of the SLAM system for various applications in mobile robotics, augmented reality, and autonomous systems.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
