@@ -1,4 +1,12 @@
+%insert path of folder containing images for slam
 folderPath="B:\finalReview\mobile_img_dataset\n\images";
+
+%after camera calibration, change the parameters below 
+focalLength    = [445.8396, 446.3485];    % in units of pixels
+ principalPoint = [241.0271, 318.7461];    % in units of pixels
+
+
+
 
 imds= imageDatastore(folderPath);
 
@@ -7,20 +15,6 @@ currFrameIdx = 1;
 currI = readimage(imds, currFrameIdx);
 himage = imshow(currI);
 rng(0);
-% % dataset
-% focalLength    = [535.4, 539.2];    % in units of pixels
-% principalPoint = [320.1, 247.6];    % in units of pixels
-
-
-%samsung
-% focalLength    = [ 1230, 1188.2866];    % in units of pixels
-% principalPoint = [ 674.0020,  427.4284];    % in units of pixels
-
-%oneplus
-focalLength    = [445.8396, 446.3485];    % in units of pixels
- principalPoint = [241.0271, 318.7461];    % in units of pixels
-
-
 imageSize      = size(currI,[1 2]); % in units of pixels
 intrinsics     = cameraIntrinsics(focalLength, principalPoint, imageSize);
 vslam = monovslam(intrinsics);
