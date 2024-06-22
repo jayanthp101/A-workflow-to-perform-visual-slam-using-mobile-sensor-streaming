@@ -1,8 +1,10 @@
+
+
+%insert the path of destination folder 
 outputFolder = "B:\finalReview\mobile_img_dataset\n"; % Change to your desired folder
+
+
 convertMat2Folder(gyro1, acc1, camera1, outputFolder);
-
-
-
 function convertMat2Folder(angularVelocityData, accelerationData, imageData, outputFolder)
     % Ensure the output folder exists
     if ~exist(outputFolder, 'dir')
