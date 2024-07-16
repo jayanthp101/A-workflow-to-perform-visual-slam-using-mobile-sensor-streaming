@@ -98,6 +98,19 @@ To set up the project, follow these steps:
 ## Results
 The project demonstrated successful data acquisition and SLAM processing using mobile sensors. Key results include accurate map initialization, tracking, local mapping, and loop closure, proving the feasibility of using mobile phones for robust visual SLAM.
 
+The below is the screenshort of dataset folder:-
+![image](https://github.com/user-attachments/assets/c7a7c72d-c209-4ffb-8200-d0b0ca343edf)
+![image](https://github.com/user-attachments/assets/59d07dbf-ce89-45fc-aa19-f1bf89db8f54)
+![image](https://github.com/user-attachments/assets/0b4fc3ba-6c9a-4069-964f-62c761335f7a)
+
+The below are the results obtained from vSlam algorithm that was performed to test the dataset:-
+![image](https://github.com/user-attachments/assets/a1593075-8ec7-4bb3-b062-11052ba5d2e0)
+![image](https://github.com/user-attachments/assets/3bc15882-9500-42fc-9aef-ed0eba0e5bf9)
+![image](https://github.com/user-attachments/assets/686ac49b-19f8-4817-8f0e-4069e049a1b5)
+
+
+
+
 ## Conclusion and Future Scope
 The project successfully established a comprehensive workflow for visual SLAM using mobile sensors, eliminating the need for expensive setups. Future work could focus on integrating IMU data for real-time processing and improving the robustness of the SLAM system for various applications in mobile robotics, augmented reality, and autonomous systems.
 
