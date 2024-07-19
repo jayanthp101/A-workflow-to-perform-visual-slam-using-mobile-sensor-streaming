@@ -98,6 +98,11 @@ To set up the project, follow these steps:
 ## Results
 The project demonstrated successful data acquisition and SLAM processing using mobile sensors. Key results include accurate map initialization, tracking, local mapping, and loop closure, proving the feasibility of using mobile phones for robust visual SLAM.
 
+
+https://github.com/user-attachments/assets/910e8ead-9fe2-445d-aeac-e9f920a55bab
+
+
+
 The below is the screenshort of dataset folder:-
 ![image](https://github.com/user-attachments/assets/c7a7c72d-c209-4ffb-8200-d0b0ca343edf)
 ![image](https://github.com/user-attachments/assets/59d07dbf-ce89-45fc-aa19-f1bf89db8f54)
